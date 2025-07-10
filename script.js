@@ -1,4 +1,4 @@
-  fetch('assets/abstract.txt')
+  fetch('assets/abstract.json')
     .then(response => response.text())
     .then(data => {
       document.getElementById('abstract-content').innerText = data;
@@ -8,7 +8,7 @@
       console.error("Error loading abstract.txt:", error);
     });
 
-  fetch('assets/introduction.txt')
+  fetch('assets/introduction.json')
     .then(response => response.text())
     .then(data => {
       document.getElementById('introduction-content').innerText = data;
@@ -18,7 +18,7 @@
       console.error("Error loading introduction.txt:", error);
     });
 
-  fetch('assets/methodology.txt')
+  fetch('assets/methodology.json')
     .then(response => response.text())
     .then(data => {
       document.getElementById('methodology-content').innerText = data;
