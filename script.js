@@ -1,4 +1,4 @@
-  fetch('assets/abstract.json')
+  fetch('assets/abstract.txt')
     .then(response => response.text())
     .then(data => {
       document.getElementById('abstract-content').innerText = data;
