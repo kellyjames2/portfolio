@@ -1,4 +1,4 @@
-  fetch('https://github.com/kellyjames2/portfolio/blob/main/assets/abstract.txt')
+  fetch('assets/abstract.txt')
     .then(response => response.text())
     .then(data => {
       document.getElementById('abstract-content').innerText = data;
